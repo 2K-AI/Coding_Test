@@ -1,0 +1,35 @@
+1번 문제
+
+def solution(strArr):    
+	answer = []     
+	   
+	for i, v in enumerate(strArr):        
+		if i % 2 == 0:            
+			strArr[i] = v.lower()        
+		else :            
+			strArr[i] = v.upper()            
+			
+	return strArr
+
+
+ 2번 문제
+ 
+ def solution(board, k):   
+	answer = 0        
+	
+	for i in range(len(board)):        
+		for j in range(len(board[i])):            
+			if i+j <= k :                
+				answer += board[i][j]                
+	return answer
+
+
+ 3번 문제
+ 
+ def solution(s1, s2):    
+	answer = 0  
+	  
+	for i in s1:        
+		if i in s2:            
+			answer += 1    
+	return answer

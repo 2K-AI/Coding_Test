@@ -1,0 +1,42 @@
+1번 문제
+
+def solution(n):    
+	answer = str(n)[::-1]    
+	ans = []
+	        
+	for i in answer:       
+		ans.append(int(i))                
+	
+	return ans
+
+
+
+ 2번 문제
+
+ def solution(arr, divisor):    
+	answer = []    
+	for a in arr :        
+		if a % divisor == 0 :            
+			answer.append(a)    answer.sort()        
+				if len(answer) == 0 :        
+		return [-1]       
+	return answer
+
+
+ 3번 문제
+ 
+def solution(n, left, right):    
+	answer = []    
+	for i in range(left,right+1):        
+	
+		a = i//n         
+		b = i%n        
+		
+		if a<b:
+		 a,b =b,a
+		 answer.append(a+1)        
+		
+		return answer
+
+  
+ 

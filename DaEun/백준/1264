@@ -1,0 +1,12 @@
+inputs = []
+
+# 여러 줄 입력 받기
+while True:
+    user_input = input()
+    if user_input == "#":
+        break
+    inputs.append(user_input.lower())
+
+# 입력된 각 줄 출력하기
+for A in inputs:
+    print(A.count('a')+A.count('e')+A.count('i')+A.count('o')+A.count('u'))
